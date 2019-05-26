@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/extmem.h
+stddef.h
+-
+
+../include/initDataBlocks.h
+stdint.h
+-
+extmem.h
+../include/extmem.h
+
+../include/join.h
+initDataBlocks.h
+../include/initDataBlocks.h
+
+../include/projection.h
+initDataBlocks.h
+../include/initDataBlocks.h
+
+../include/select.h
+initDataBlocks.h
+../include/initDataBlocks.h
+
+E:/CProjects/SqlQueryAlgorithm/src/test.c
+stdlib.h
+-
+stdio.h
+-
+initDataBlocks.h
+E:/CProjects/SqlQueryAlgorithm/src/initDataBlocks.h
+select.h
+E:/CProjects/SqlQueryAlgorithm/src/select.h
+projection.h
+E:/CProjects/SqlQueryAlgorithm/src/projection.h
+join.h
+E:/CProjects/SqlQueryAlgorithm/src/join.h
+
